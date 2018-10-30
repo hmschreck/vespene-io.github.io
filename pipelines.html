@@ -194,7 +194,8 @@
 <span id="id1"></span><h1>Pipelines<a class="headerlink" href="#pipelines" title="Permalink to this headline">¶</a></h1>
 <p>Pipelines are a method of triggering one or more jobs, in stages, when other jobs complete.  A build system is already a “continuous integration” system, so pipelines extend it to become the hub of
 a “continuous deployment” system.</p>
-<p>Vespene pipelines are configured graphically, without any special language or data format.</p>
+<p>Vespene pipelines are created graphically, without any special language or data format, but projects may add themselves
+to pipelines using .vespene files (see <a class="reference internal" href="importing.html#importing"><span class="std std-ref">Importing Organizations</span></a>) dynamically if so configured.</p>
 <p>Builds in a pipeline can intelligently pass variables between one another using <a class="reference internal" href="variables.html#output-variables"><span class="std std-ref">Output Variables</span></a>.</p>
 <div class="section" id="stages">
 <h2>Stages<a class="headerlink" href="#stages" title="Permalink to this headline">¶</a></h2>

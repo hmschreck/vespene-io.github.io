@@ -206,7 +206,7 @@
 but try the following things first.</p>
 <div class="section" id="my-build-takes-a-long-time-to-execute-hangs">
 <h2>My build takes a long time to execute / hangs<a class="headerlink" href="#my-build-takes-a-long-time-to-execute-hangs" title="Permalink to this headline">¶</a></h2>
-<p>Vespne makes a lot of effort to try to ensure software checkouts are non-interactive.</p>
+<p>Vespene makes a lot of effort to try to ensure software checkouts are non-interactive.</p>
 <p>Checkouts are always executed with timeout commands to not permanently block workers, but occasionally some
 bad configurations may block builds for longer than you would like.</p>
 <p>Your setup (per instructions) should first and foremost always execute workers with “ssh-agent”.  If this is done,
@@ -282,7 +282,7 @@ and attention to any failed builds, and make something more friendly for showing
 </div>
 <div class="section" id="can-i-use-apache-or-nginx-with-vespene">
 <h2>Can I use Apache or NGINX with Vespene?<a class="headerlink" href="#can-i-use-apache-or-nginx-with-vespene" title="Permalink to this headline">¶</a></h2>
-<p>Yes, you can proxy Vespene’s server (gnuicorn) with another web server.  However Vespene expects to be “/”, so you can’t mount
+<p>Yes, you can proxy Vespene’s server (gunicorn) with another web server.  However Vespene expects to be “/”, so you can’t mount
 those URLs on a different URL space at this point.</p>
 </div>
 <div class="section" id="how-is-windows-support">
