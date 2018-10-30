@@ -362,7 +362,7 @@ way, that is acceptable.</p>
 <p>One minor gotcha is that we didn’t know in advance if you wanted to install the database server on the
 same box as the Vespene services, so the Vespene services don’t normally have a startup dependency on the
 database.  You can add this by editing the systemd unit file.</p>
-<p>If the service is not operational on reboot because PostgreSQL was not ready, just restart “vespene.service”.</p>
+<p>If the service is not operational on reboot because PostgreSQL was not ready, just restart “vespene.service” using "systemctl restart vespene.service".</p>
 <p>Developers can learn about starting workers and the web process in <a class="reference internal" href="development_setup.html#development-setup"><span class="std std-ref">Development Setup</span></a> and many systems
 administrators will also benefit from understanding this as well. In short, supervisord runs and watches over
 commands that are not far off from the development testing commands, and all systemd really does is launch supervisord.</p>
