@@ -213,8 +213,8 @@ as templated through the <a class="reference internal" href="variables.html#vari
 </div>
 <div class="section" id="platform-support">
 <h2>Platform Support<a class="headerlink" href="#platform-support" title="Permalink to this headline">¶</a></h2>
-<p>It is important to note that the builders have been developed for OS X, <em>BSD, and Linux operating systems, and have not been tested on windows at this
-point. We openly welcome community contributions for windows builder support.  This will probably require some *very minor</em>
+<p>It is important to note that the builders have been developed for <em>OS X, BSD, and Linux operating systems, and have not been tested on Windows at this
+    point.</em> We openly welcome community contributions for Windows builder support.  This will probably require some very minor
 changes to add a new isolation mode, which is discussed below. Let’s talk about this on the forum!</p>
 </div>
 <div class="section" id="worker-pools">
@@ -244,8 +244,8 @@ settings.py.  The <a class="reference internal" href="setup.html#setup"><span cl
 the build, such as sending a chat announcement or running some configured shell commands. Triggers are plugins,
 they can do anything, but they do run from the worker machines.</p>
 <p>A working directory is then prepared using the build root configured in settings.py, named after the build number.</p>
-<p>The worker will then add any <a class="reference internal" href="access.html#ssh"><span class="std std-ref">SSH Keys</span></a> keys associated with the project before running the build.</p>
-<p>The worker will then perform any source control checkouts using any <a class="reference internal" href="access.html#service-logins"><span class="std std-ref">Service Logins</span></a> or <a class="reference internal" href="access.html#ssh"><span class="std std-ref">SSH Keys</span></a> keys,
+<p>The worker will then add any <a class="reference internal" href="access.html#ssh"><span class="std std-ref">SSH Keys</span></a> associated with the project before running the build.</p>
+<p>The worker will then perform any source control checkouts using any <a class="reference internal" href="access.html#service-logins"><span class="std std-ref">Service Logins</span></a> or <a class="reference internal" href="access.html#ssh"><span class="std std-ref">SSH Keys</span></a>,
 but not all build scripts are required to have a repo associated with them.  They could just run a simple script
 without a checkout (if the project SCM type is set to “none”).</p>
 <p>Then, after checkout (if needed), the worker will attempt to isolate the build script.  At this point in Vespene’s development, there are two
@@ -283,7 +283,7 @@ taken to the worker machine that hosts those files, and that worker will serve t
 <div class="section" id="sudo-isolation">
 <span id="id4"></span><h3>Sudo Isolation<a class="headerlink" href="#sudo-isolation" title="Permalink to this headline">¶</a></h3>
 <p>The first mode, sudo, switches to a sudo user before running the build script.  This mode comes with few dependencies and is easy
-to set up. On the worker pool, the sudo_user must be configured, and this user as described in <a class="reference internal" href="security.html#security"><span class="std std-ref">Security Guide</span></a> must NOT
+to set up. On the worker pool, the sudo_user must be configured, and this user as described in the <a class="reference internal" href="security.html#security"><span class="std std-ref">Security Guide</span></a> must NOT
 have access to read the Vespene configuration files.</p>
 </div>
 <div class="section" id="basic-container-isolation">
